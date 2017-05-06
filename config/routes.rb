@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'application#hello'
   get 'list/index'
 
   root 'application#hello'
