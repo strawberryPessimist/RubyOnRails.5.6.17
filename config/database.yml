@@ -40,7 +40,6 @@ test:
   encoding: unicode
   database: todo_app_test
 
-
 production:
   adapter: postgresql
   encoding: unicode
