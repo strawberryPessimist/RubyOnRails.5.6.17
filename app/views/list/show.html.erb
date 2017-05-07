@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do Lister</title>
+        <h1>Todo List #<%= @list_name %></h1>
+        
+    </head>
+    <body>
+                <h1>My To-do Lists</h1>
+        <a href="#">Make another to-do list</a>
+        
+        <ul>
+          <h2>Homework</h2>
+          <li>
+            <input type="checkbox"></input>
+            <span>Complete all missed assignments - Physics</span>
+            <strong>4 pomodoros</strong>
+          </li>
+          <li>
+            <input type="checkbox"></input>
+            <span>Study rehtoric section for quiz - Communications</span>
+            <strong>2 pomodoros</strong>
+          </li>
+          <li>
+            <input type="checkbox"></input>
+            <span>Complete lab assignment #4 - AP Computer Science</span>
+            <strong>3 pomodoros</strong>
+          </li>
+        </ul>
+        
+        <ul>
+          <h2>Chores</h2>
+          <li>
+            <input type="checkbox"></input>
+            <span>Laundry</span>
+            <strong>2 pomodoros</strong>
+          </li>
+          <li>
+            <input type="checkbox"></input>
+            <span>Vacuum room</span>
+            <strong>1 pomodoro</strong>
+          </li>
+        </ul>
+        
+        <ul>
+          <h2>Math</h2>
+          <li><strong>
+              <span>Select your favorite numbers:</span>
+          </strong></li>
+          <li>
+            <input type="checkbox"></input>
+            <%= num = 8
+                num
+                %>
+          </li>
+          <li>
+            <input type="checkbox"></input>
+            <span>a = <%= 1 + 3 %></span>
+          </li>
+          
+        </ul>
+    </body>
+</html>
