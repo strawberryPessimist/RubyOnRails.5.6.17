@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'list/index'
-  get 'list/first'
-  get 'list/second'
+  get 'list' => 'list#hello'
+  get 'list/:id' => 'list#show'
 
   root 'application#hello'
   # The priority is based upon order of creation: first created -> highest priority.
