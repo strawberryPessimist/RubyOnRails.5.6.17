@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   get 'list/index'
   get 'list' => 'list#hello'
-  get 'list/:id' => 'list#show'
   get 'list/new' => 'list#new'
   get 'list/create' => 'list#create'
+  get 'list/:id' => 'list#show'
+  get 'list/edit/:id' => 'list#edit'
+  get 'list/update/:id' => 'list#update'
 
   root 'application#hello'
   # The priority is based upon order of creation: first created -> highest priority.

@@ -2,8 +2,7 @@
 <html>
     <head>
         <title>To-Do Lister</title>
-        <h1>Todo List #<%= @list.name %></h1>
-        
+        <h1>Todo List #<%= @id %></h1>
     </head>
     <body>
                 <h1>My To-do Lists</h1>
@@ -59,5 +58,9 @@
           </li>
           
         </ul>
+        
+        <a href="/list/edit/<%= @list.id %>">Edit this todo list</a>
+        <%= @list.name %>
+        <%= @list %>
     </body>
 </html>

@@ -1,12 +1,13 @@
 class ListController < ApplicationController
   def index
   end
+  
   def show
     @id = params['id']
     
-    @list = List.find_by_id(params['id'])
+    @list = List.find_by_id(@id) 
     
-    if params['id'].length <= 5
+    if @id.length <= 5
       #todo list one
 
       @first_todo_description = "Complete all missed assignments - Physics"
@@ -31,12 +32,25 @@ class ListController < ApplicationController
       @third_todo_pomodoro_estimate = "2 pomodoros"
     end
   end
+  
   def new
   end
+  
   def create
     l = List.new
-    l.name = params['name']
+    l.name = params['newTask']
     l.save
     redirect_to "/list/#{ l.id }"
+  end
+  
+  def edit
+    @list = List.find_by_id(params['id'])
+  end
+  
+  def update
+    l = List.find_by_id(params['id'])
+    l.name = params['newTask']
+    l.save
+    redirect_to "/list/#{l.id}"
   end
 end
