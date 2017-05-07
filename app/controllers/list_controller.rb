@@ -2,10 +2,7 @@ class ListController < ApplicationController
   def index
 
   end
-  def first
-    
-  end
-  def second
+  def show
     
   end
 end
